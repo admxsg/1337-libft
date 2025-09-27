@@ -41,5 +41,20 @@ int main()
     printf ("memchr: %s\n" ,  (char *)ft_memchr(mem, 'd', 6));
     printf ("memcmp: %d\n" ,  ft_memcmp("abcde", "abCde", 5));
     printf("strnstr : %s\n" ,ft_strnstr("hello word","ll",5));
+    printf("atoi : %d\n" , ft_atoi("-42"));
+    int *cstr;
+    cstr = (int *)ft_calloc(2,sizeof(int));
+    int i = 0 ;
+    printf ("calloc :");
+    while (i < 2)
+    {
+	    printf("%d" , cstr[i]);
+	    i++;
+    }
+    printf("\n");
+    free(cstr);
+    char *dstr = ft_strdup("hello");
+    printf ("strdup : %s\n" , dstr);
+    free(dstr);
     return 0;
 }
