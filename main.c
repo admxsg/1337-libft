@@ -59,5 +59,8 @@ int main()
     char *substr = ft_substr("hello",2,2);
     printf("substr: %s\n",substr);
     free(substr);
+    char *jstr = ft_strjoin("hello, ","adam");
+    printf("strjoin : %s\n" , jstr);
+    free(jstr);
     return 0;
 }
