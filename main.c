@@ -62,5 +62,8 @@ int main()
     char *jstr = ft_strjoin("hello, ","adam");
     printf("strjoin : %s\n" , jstr);
     free(jstr);
+    char *strtrim = ft_strtrim(" hello word "," ");
+    printf("strtrim : %s\n" , strtrim);
+    free(strtrim);
     return 0;
 }
