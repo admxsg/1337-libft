@@ -3,7 +3,7 @@
 
 int main()
 {
-    /*char str[] = "Hello";
+    char str[] = "Hello";
     printf ("isalpha : %d\n" ,  ft_isalpha(97));
     printf ("isdigit : %d\n" ,  ft_isdigit(48));
     printf ("isalnum : %d\n" ,  ft_isalnum(48));
@@ -40,11 +40,6 @@ int main()
     char mem[] = "abcdef";
     printf ("memchr: %s\n" ,  (char *)ft_memchr(mem, 'd', 6));
     printf ("memcmp: %d\n" ,  ft_memcmp("abcde", "abCde", 5));
-    printf("strnstr : %s\n" ,ft_strnstr("hello word","ll",3));*/
-    int p = 97;
-    // adress p
-    printf ("%p\n", (void *)&p);        
-    write(1,&p,1);
-    write(1,"\n",1);
+    printf("strnstr : %s\n" ,ft_strnstr("hello word","ll",5));
     return 0;
 }
