@@ -56,5 +56,8 @@ int main()
     char *dstr = ft_strdup("hello");
     printf ("strdup : %s\n" , dstr);
     free(dstr);
+    char *substr = ft_substr("hello",2,2);
+    printf("substr: %s\n",substr);
+    free(substr);
     return 0;
 }
