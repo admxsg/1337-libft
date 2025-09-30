@@ -65,5 +65,21 @@ int main()
     char *strtrim = ft_strtrim(" hello word "," ");
     printf("strtrim : %s\n" , strtrim);
     free(strtrim);
+    char **spstr = ft_split("hello word 42", ' ');
+    write(1,"split : ",8);
+    i = 0;
+    while (spstr[i])
+    {
+	    int k = 0;
+	    while(spstr[i][k])
+	    {
+		    write(1,&spstr[i][k],1);
+		    k++;
+	    }
+	    write(1," ",1);
+	    i++;
+    }
+    write(1,"\n",1);
+    free(spstr);
     return 0;
 }
