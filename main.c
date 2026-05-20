@@ -6,6 +6,11 @@ char upper_lower(unsigned int i ,char c)
 			                return (c - 32);
 		        return(c);
 }
+void upper_even(unsigned int i ,char *c)
+{
+	                if (i % 2 == 0)
+				*c -=32;
+}
 int main ()
 {
 	printf("isalpha : %d\n" , ft_isalpha(97));
@@ -82,4 +87,13 @@ int main ()
 	char *p8 = ft_strmapi("helloword" ,upper_lower);
 	printf("strmapi : %s\n" , p8);
 	free(p8);
+	char p9[] = "helloword";
+	ft_striteri(p9,upper_even);
+	printf("striteri : %s\n" , p9);
+	write(1,"putchar : ",10);
+	ft_putchar_fd('A',1);
+	write(1,"\n",1);
+	write(1,"putstr : ",8);
+	ft_putstr_fd("hello",1);
+	write(1,"\n",1);
 }
