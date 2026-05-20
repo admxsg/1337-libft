@@ -96,4 +96,9 @@ int main ()
 	write(1,"putstr : ",8);
 	ft_putstr_fd("hello",1);
 	write(1,"\n",1);
+	write(1,"putendl : ",10);
+	ft_putendl_fd("hello",1);
+	write(1,"putnbr : ",9);
+	ft_putnbr_fd(-42,1);
+	write(1,"\n",1);
 }
