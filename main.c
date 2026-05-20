@@ -1,6 +1,11 @@
 #include "libft.h"
 #include <stdio.h>
-
+char upper_lower(unsigned int i ,char c)
+{
+	        if (i % 2 == 0)
+			                return (c - 32);
+		        return(c);
+}
 int main ()
 {
 	printf("isalpha : %d\n" , ft_isalpha(97));
@@ -74,6 +79,7 @@ int main ()
 	char *p7 = ft_itoa(-42);
 	printf("itoi : %s\n " , p7);
 	free(p7);
-
+	char *p8 = ft_strmapi("helloword" ,upper_lower);
+	printf("strmapi : %s\n" , p8);
+	free(p8);
 }
-
